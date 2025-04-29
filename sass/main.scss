@@ -1,5 +1,5 @@
-@import "./components/header";
-
+@use "./components/header.scss";
+@use "./utils/colors.scss";
 *,
 *::before,
 *::after {
@@ -21,7 +21,7 @@
   display: block;
   margin: 0 auto;
 
-  color: var(--content-up-color);
+  color: colors.$content-up-color;
   padding: 180px 20px;
   text-align: center;
 
@@ -31,7 +31,7 @@ font-size: 44px;
 }
 
 .just-btn {
-  background-color: var(--button1-bg-color);
+  background-color: colors.$button1-bg-color;
   color:var(--button1--color);
   padding: 10px 20px;
   margin-top: 30px;

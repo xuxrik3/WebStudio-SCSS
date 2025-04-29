@@ -44,7 +44,7 @@ h1, h2, h3, h4, p, ul, li, a, button {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--header-bg-color);
+  background-color: #fff;
   color: var(--poster-p-color);
   font-size: 14px;
   line-height: 1.7;
@@ -58,12 +58,12 @@ body {
 }
 
 .header {
-  background-color: var(--header-bg-color);
+  background-color: #fff;
   padding: 10px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-color: var(--header-border-color);
+  border-color: #ECECEC;
   /* border: 1px; */
 }
 
@@ -108,7 +108,7 @@ body {
 
 .header-list:last-of-type {
   margin-left: 215px;
-  color: var(--header-header-item-two-last);
+  color: #757575;
 }
 
 .header-item {
@@ -132,7 +132,7 @@ body {
 }
 
 .header-item a {
-  color: var(--header-text-color);
+  color: #333;
   font-weight: 500;
   transition: color 0.5s ease;
   font-size: 15px;
@@ -152,7 +152,7 @@ body {
   --color4:  var(--primary-color);
 } */
 .header-item a:hover {
-  color: var(--primary-color);
+  color: #2196F3;
 }
 
 .contact-link svg {
@@ -160,12 +160,12 @@ body {
 }
 
 .contact-link:hover {
-  color: var(--primary-color);
+  color: #2196F3;
 }
 
 .contact-link:hover svg {
-  fill: var(--primary-color);
-  --color4: var(--primary-color);
+  fill: #2196F3;
+  --color4: colors.$primary-color;
 }
 
 .icon1 {
@@ -314,7 +314,7 @@ button[data-modal-close] {
   height: 600px;
   display: block;
   margin: 0 auto;
-  color: var(--content-up-color);
+  color: white;
   padding: 180px 20px;
   text-align: center;
 }
@@ -324,7 +324,7 @@ button[data-modal-close] {
 }
 
 .just-btn {
-  background-color: var(--button1-bg-color);
+  background-color: #007BFF;
   color: var(--button1--color);
   padding: 10px 20px;
   margin-top: 30px;

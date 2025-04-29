@@ -1,4 +1,4 @@
-@import "./../utils/colors";
+@use "../utils/colors.scss";
 
 
 a{
@@ -13,7 +13,7 @@ a{
   }
   body {
   font-family:  'Roboto', sans-serif;
-   background-color:var(--header-bg-color);
+   background-color: colors.$header-bg-color;
    color:var(--poster-p-color);
    font-size:14px ;
    line-height: 1.7;
@@ -27,12 +27,12 @@ a{
   }
   
   .header {
-    background-color: var(--header-bg-color);
+    background-color: colors.$header-bg-color;
     padding: 10px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-color: var(--header-border-color);
+    border-color: colors.$header-border-color;
     /* border: 1px; */
   }
   
@@ -85,7 +85,7 @@ a{
   
   .header-list:last-of-type {
     margin-left: 215px ;
-    color: var(--header-header-item-two-last);
+    color: colors.$header-header-item-two-last;
   }
   .header-item {
     position: relative; 
@@ -109,7 +109,7 @@ a{
   
   
   .header-item a {
-    color: var(--header-text-color);
+    color: colors.$header-text-color;
     font-weight: 500;
     transition: color 0.5s ease;
     font-size: 15px;
@@ -131,7 +131,7 @@ a{
       --color4:  var(--primary-color);
     } */
     .header-item a:hover  {
-      color: var(--primary-color);
+      color: colors.$primary-color;
     }
   
     .contact-link svg {
@@ -140,12 +140,12 @@ a{
     }
     
     .contact-link:hover {
-      color: var(--primary-color);
+      color: colors.$primary-color;
     }
     
     .contact-link:hover svg {
-      fill: var(--primary-color);
-      --color4:  var(--primary-color);
+      fill: colors.$primary-color;
+      --color4:  colors.$primary-color;
     }
   
     
