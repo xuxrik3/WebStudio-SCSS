@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* колір фона заголовка */
+/* header-border-color */
+/* колір заголовка */
+/* header-item a:hover */
+/* посуті те саме header-text-color */
+/* content-up-color */
+/* button1  */
+/* button1  */
+/* button1-bg-color-hover */
+/* services-item-h3 */
+/* services-item-a */
+/* Чим займаємось */
+/* Наша команда */
+/* Наша команда */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* (Web)Studio footer */
+/* Web(Studio) footer */
+/* Web(Studio) header */
+/* PORTFOLIO  */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* footer */
+footer {
+  background-color: #2F303A;
+  color: white;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.logo-footer {
+  margin-left: 30px;
+  margin-top: 40px;
+  padding-right: 110px;
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+.footer-- i {
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 110px;
+}
+
+address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 1200px;
+}
+
+address a {
+  color: white;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.address-a2 {
+  color: gray;
+}
+
+address li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  width: 231px;
+  font-style: normal;
+}
+
+.blue {
+  color: #007bff;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.white {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.black {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 825px;
+}
+
+.footer-a svg {
+  width: 40px;
+  height: 40px;
+  transition: fill 0.3s ease;
+  --color1: $footer-a-bg-color1;
+  --color2: $footer-a-bg-color2;
+  --color1: rgba(255, 255, 255, 0.10);
+  --color2: #fff ;
+  margin-left: 10px;
+}
+
+.footer-a svg:hover {
+  --color1: #2196F3;
+  --color2: #ffff ;
+}
+
+#intup-email {
+  margin: 0px -785px;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 358px;
+  height: 50px;
+}
+
+.bnt-intup-email {
+  margin-left: 800px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 4px;
+  /* width: 200px;
+  height: 50px; */
+  padding: 11px 20px;
+  background: #2196F3;
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+  color: #fff;
+}
+
+.bnt-intup-email img {
+  padding-left: 10px;
+}

@@ -1,0 +1,129 @@
+@import "../utils/_colors.scss";
+
+/* footer */
+
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-color;
+  padding: 20px 0;
+  text-align: left;
+}
+.logo-footer {
+  margin-left: 30px;
+  margin-top: 40px;
+  padding-right: 110px;
+  font-size: 24px;
+  font-family: "Raleway";
+}
+.footer-- i {
+  color: $footer-i;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 110px;
+}
+address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  width: 1200px;
+}
+address a {
+  color: $address-a-color;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+.address-a2 {
+  color: $address-a2-color;
+}
+address li {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  width: 231px;
+  font-style: normal;
+}
+.blue {
+  color: $blue-color;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.white {
+  color: $white-color;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.black {
+  color: $black-color;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 825px;
+}
+
+.footer-a svg {
+  width: 40px;
+  height: 40px;
+  transition: fill 0.3s ease;
+  // fill: $footer-a-bg-color1;
+  --color1: $footer-a-bg-color1;
+  --color2: $footer-a-bg-color2;
+   --color1: rgba(255, 255, 255, 0.10);
+   --color2: #fff ;
+  margin-left: 10px;
+}
+.footer-a svg:hover {
+  // --color1: $footer-social-a-hover-svg;
+  --color1: #2196F3;
+  --color2: #ffff ;
+  // fill: $my-teams-social-svg-hover-color1;
+}
+
+// /* .footer-a:hover svg {
+//   fill:rgba(255, 255, 255, 0.10);
+// } */
+
+#intup-email {
+  margin: 0px -785px;
+  background-color: $bg-intup-email;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 358px;
+  height: 50px;
+}
+.bnt-intup-email {
+  margin-left: 800px;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 4px;
+  /* width: 200px;
+  height: 50px; */
+  padding: 11px 20px;
+  background: $bg-bnt-intup-email;
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
+  color: $bnt-intup-email-color;
+
+}
+.bnt-intup-email img {
+  padding-left: 10px;
+
+}
+

@@ -8,7 +8,8 @@ $content-up-bg-color: #2F303A;     /* посуті те саме header-text-col
 $content-up-color: white;          /* content-up-color */
 
 $button1-bg-color: #007BFF;      /* button1  */
-$button1-color: white;          /* button1  */
+$button1-color: #ffffff;          /* button1  */
+
 $button1-bg-color-hover: #0056b3; /* button1-bg-color-hover */
 
 $services-item-h3-color: #212121;   /* services-item-h3 */
@@ -29,7 +30,8 @@ $fit3-bg: rgba(47, 48, 58, 0.80);
 $my_teams-bg-color: #F5F4FA; /* Наша команда */
 $my_team-color: #212121;
 $my_teams-p-color: #757575; /* Наша команда */
-$my-teams-social-svg-hover-fill: #ffff;
+$my-teams-social-svg-hover-color1: #ffff;
+$my-teams-social-svg-hover-color2 :#2196F3;
 
 $footer-bg-color: #2F303A; /* footer */
 $footer-a-bg: rgba(255, 255, 255, 0.1);
@@ -37,13 +39,18 @@ $footer-color: white;   /* footer */
 $footer-a-bg-color1: rgba(255, 255, 255, 0.10);
 $footer-a-bg-color2: #fff;
 $footer-icon-color4: #ffff;
+$footer-i: #FFF;
+$footer-social-a-hover-svg: #2196F3;
 
 $address-a-color: #ffff; /* footer */
 $address-a2-color: gray; /* footer */
 $blue-color: #007bff;  /* (Web)Studio footer */
 $white-color: #ffffff; /* Web(Studio) footer */
 $black-color: #000000; /* Web(Studio) header */
+
 $clients-li-ul-hover: #2196F3;
+$clients-bg-color: #FFF;
+
 $bg-bnt-intup-email: #2196F3;
 $bg-intup-email: #2F303A;
 $bnt-intup-email-color: #fff;
@@ -61,8 +68,8 @@ $poster-p-color: #757575; /* */
 $services-item-icon-color: #F5F4FA;  /* */
 $my_teams-li-color: #fff;
 
-$footer-social-a-hover-img: #2196F3;
+
+
 $poster-h3: #212121;
 
-$clients-bg-color: #FFF;
-$footer-i: #FFF;
+
