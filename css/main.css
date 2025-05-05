@@ -175,10 +175,10 @@ body {
 .header .header-item a {
   color: #333;
   font-weight: 500;
-  transition: color 0.5s ease;
   font-size: 15px;
   text-decoration: none;
   padding: 10px 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header .header-item a:hover {
   color: #2196F3;
@@ -429,6 +429,7 @@ address li {
 .footer-a svg:hover {
   --color1: #2196F3;
   --color2: #ffff ;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #intup-email {
@@ -451,6 +452,10 @@ address li {
   background: #2196F3;
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   color: #fff;
+}
+
+.bnt-intup-email:hover {
+  box-shadow: 0 4px 8px rgb(0, 0, 1);
 }
 
 .bnt-intup-email img {
@@ -588,9 +593,11 @@ address li {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .content-up .just-btn:hover {
   background-color: #0056b3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services {
@@ -763,6 +770,8 @@ justify-content: center
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+  fill: white;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .my-teams-social svg:hover {
@@ -770,6 +779,7 @@ justify-content: center
   fill: white;
   width: 40px;
   height: 40px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .my_teams li {
@@ -838,10 +848,12 @@ justify-content: center
 
 .clients-li a svg:hover {
   --color4:#2196F3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-li:hover {
   border-color: #2196F3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {

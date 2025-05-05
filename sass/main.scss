@@ -38,10 +38,13 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .just-btn:hover {
   background-color:  $button1-bg-color-hover;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 // ----------------------------Особливості-----------------------------------------
@@ -217,6 +220,11 @@ justify-content: center
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+  fill: #ffff;
+  // fill: $my-teams-social-svg-hover-color1;
+
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .my-teams-social svg:hover {
   //  --color1: $my-teams-social-svg-hover-color2;
@@ -225,7 +233,7 @@ justify-content: center
   fill: $my-teams-social-svg-hover-color1;
   width: 40px;
   height: 40px;
-  
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .my_teams li {
@@ -292,10 +300,12 @@ justify-content: center
 .clients-li a svg:hover {
   //--color4: $color-clients-li-a-svg;
   --color4:#2196F3;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .clients-li:hover {
   border-color: $color-clients-li-a-svg;
-
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   width: 106px;

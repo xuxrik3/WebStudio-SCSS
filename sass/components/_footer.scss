@@ -95,6 +95,7 @@ address li {
   --color1: #2196F3;
   --color2: #ffff ;
   // fill: $my-teams-social-svg-hover-color1;
+  transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 // /* .footer-a:hover svg {
@@ -120,7 +121,10 @@ address li {
   background: $bg-bnt-intup-email;
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   color: $bnt-intup-email-color;
-
+  
+}
+.bnt-intup-email:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 1, 1.2);
 }
 .bnt-intup-email img {
   padding-left: 10px;
