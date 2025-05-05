@@ -1,6 +1,7 @@
 @import "./utils/_colors.scss"; 
-@import "./components/header.scss"; 
-@import "./components/footer.scss"; 
+@import "./components/_header.scss"; 
+@import "./components/_footer.scss"; 
+@import "./portfolio/_portfolio.scss"; 
 *,
 *::before,
 *::after {
@@ -23,10 +24,10 @@
   color: $content-up-color;
   padding: 180px 20px;
   text-align: center;
-}
-.content-up h2 {
-  font-size: 44px;
-}
+
+  .content-up h2 {
+    font-size: 44px;
+  }
 
 .just-btn {
   background-color:  $button1-bg-color;
@@ -42,11 +43,13 @@
 .just-btn:hover {
   background-color:  $button1-bg-color-hover;
 }
-/* Особливості  */
+}
+// ----------------------------Особливості-----------------------------------------
+
 .services {
   margin-top: 94px;
   margin-bottom: 94px;
-}
+
 .services-list {
   display: flex;
   flex-wrap: nowrap;
@@ -107,8 +110,10 @@ p.services-item-a {
 /* .services-item:nth-last-child(3n) {
   margin-right: 0;
 } */
+}
 
-/* Чим займаємось  */
+// ---------------------------- Чим займаємось-------------------------------------
+
 .foto {
   background-color: $foto-bg-color;
   color: $foto-color;
@@ -180,7 +185,7 @@ justify-content: center
   margin-top: 225px;
 }
 
-/* Наша комaнда */
+// ----------------------------Наша комaнда----------------------------
 .my_teams {
   background-color: $my_teams-bg-color;
   color: $my_team-color;
@@ -249,13 +254,14 @@ justify-content: center
   --color2: $social-icon-hover-color2;
 }
 
-/* Постійні клієнти */
+
+// ---------------------------- Постійні клієнти ----------------------------
 
 .clients {
   text-align: center;
   background-color:$clients-bg-color;
-}
 
+}
 /* .clients- {
 } */
 .clients-menu {
@@ -302,94 +308,3 @@ justify-content: center
 
 /* PORTFOLIO */
 
-.figures {
-  margin-left: 300px;
-  padding: 20px 25px;
-}
-.button-pt {
-  background-color: $button-pt-bg-color;
-  color: $button-pt-color;
-  border-radius: 4px;
-  padding: 10px 27px;
-  font-weight: 500;
-  cursor: pointer;
-  border: 0px;
-}
-.button-pt:hover {
-  background-color: $button-pt-hover-bg-color;
-  color: $button-pt-hover-color;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-.my-shop {
-  background-color: $my-shop-bg-color;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /*dodalem */
-  padding: 20px 0; /*dodalem */
-}
-.my-shop ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0;
-}
-
-.poster {
-  position: relative;
-  width: 370px;
-  height: 404px;
-  border: 1px solid $poster-border;
-  margin: 2px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* flex-direction: column; */
-  cursor: pointer;
-  transition: transform 0.3 ease-in-out;
-}
-
-.poster-info {
-  position: absolute;
-  top: 0;
-  bottom: 110px;
-  background: rgba(33, 150, 243, 0.9);
-  color: #ffffff;
-  opacity: 0;
-  transition: transform 0.3 ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.poster-info:hover {
-  opacity: 1;
-  padding-bottom: 50px;
-}
-.description {
-  color: #ffffff;
-}
-.poster-info .description {
-  color: #ffffff;
-}
-.poster:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-
-.poster h3 {
-  color: $poster-h3;
-  font-size: 18px;
-  line-height: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-.poster p {
-  color: $poster-p-color;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-left: 20px;
-}
