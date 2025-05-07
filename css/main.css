@@ -374,7 +374,6 @@ address a {
 }
 
 address li {
-  list-style: none;
   margin-bottom: 10px;
   margin-left: 25px;
   width: 231px;
@@ -419,16 +418,13 @@ address li {
   width: 40px;
   height: 40px;
   transition: fill 0.3s ease;
-  --color1: $footer-a-bg-color1;
-  --color2: $footer-a-bg-color2;
-  --color1: rgba(255, 255, 255, 0.10);
-  --color2: #fff ;
+  --color5: rgba(255, 255, 255, 0.10);
+  --color1: #fff ;
   margin-left: 10px;
 }
 
 .footer-a svg:hover {
-  --color1: #2196F3;
-  --color2: #ffff ;
+  --color5: #2196F3 ;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -775,8 +771,8 @@ justify-content: center
 }
 
 .my-teams-social svg:hover {
-  --color1: #2196F3;
-  fill: white;
+  --color1: $my-teams-social-svg-hover-white;
+  --color5: #2196F3;
   width: 40px;
   height: 40px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -804,15 +800,12 @@ justify-content: center
 }
 
 .social-icon:hover {
-  width: 20px;
-  height: 20px;
-  --color4: $social-icon-hover-color4;
+  --color3: $social-icon-hover-color4;
   --color2: $social-icon-hover-color2;
 }
 
 .clients {
   text-align: center;
-  background-color: #FFF;
 }
 
 /* .clients- {
@@ -820,12 +813,12 @@ justify-content: center
 .clients-menu {
   display: flex;
   align-items: center;
-  text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .clients ul {
   display: flex;
+  padding: 0;
 }
 
 .clients h2 {
@@ -839,20 +832,13 @@ justify-content: center
   width: 170px;
   height: 92px;
   flex-shrink: 0;
-  margin-right: 30px;
   margin-bottom: 94px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   padding-top: 12px;
 }
 
 .clients-li a svg:hover {
-  --color4:#2196F3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-li:hover {
-  border-color: #2196F3;
+  --color1:#2196F3;
+  fill: #2196F3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
