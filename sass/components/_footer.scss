@@ -1,4 +1,4 @@
-@import "../utils/_colors.scss";
+@import "../utils/_variables.scss";
 
 /* footer */
 
@@ -30,22 +30,24 @@ address {
   align-items: flex-start;
   padding: 20px 0;
   width: 1200px;
-}
-address a {
+
+a {
   color: $address-a-color;
   font-weight: 400;
   line-height: 24px;
   font-size: 14px;
 }
-.address-a2 {
-  color: $address-a2-color;
-}
-address li {
+li {
  // list-style: none;
   margin-bottom: 10px;
   margin-left: 25px;
   width: 231px;
   font-style: normal;
+}
+}
+
+.address-a2 {
+  color: $address-a2-color;
 }
 .blue {
   color: $blue-color;
@@ -90,14 +92,14 @@ address li {
    --color5: rgba(255, 255, 255, 0.10);
    --color1: #fff ;
   margin-left: 10px;
-}
-.footer-a svg:hover {
+
+&:hover {
   // --color1: $footer-social-a-hover-svg;
   
   --color5: #2196F3 ;
   // fill: $my-teams-social-svg-hover-color1;
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}}
 
 // /* .footer-a:hover svg {
 //   fill:rgba(255, 255, 255, 0.10);
@@ -123,12 +125,12 @@ address li {
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   color: $bnt-intup-email-color;
   
-}
-.bnt-intup-email:hover{
+
+&:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 1, 1.2);
 }
-.bnt-intup-email img {
+& img {
   padding-left: 10px;
 
-}
+}}
 

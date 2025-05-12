@@ -1,5 +1,5 @@
 
-@import '../utils/_colors.scss';
+@import '../utils/_variables.scss';
 
 
 a{
@@ -132,7 +132,7 @@ a{
       fill:  var(--primary-color);
       --color4:  var(--primary-color);
     } */
-    .header-item a:hover  {
+    & a:hover  {
       color: $primary-color;
     }
   

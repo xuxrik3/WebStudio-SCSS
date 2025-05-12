@@ -1,4 +1,4 @@
-@import "./utils/_colors.scss"; 
+@import "./utils/_variables.scss"; 
 @import "./components/_header.scss"; 
 @import "./components/_footer.scss"; 
 @import "./portfolio/_portfolio.scss"; 
@@ -25,7 +25,7 @@
   padding: 180px 20px;
   text-align: center;
 
-  .content-up h2 {
+  & h2 {
     font-size: 44px;
   }
 
@@ -40,12 +40,16 @@
   font-size: 16px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color:  $button1-bg-color-hover;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.just-btn:hover {
-  background-color:  $button1-bg-color-hover;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .just-btn:hover {
+//   background-color:  $button1-bg-color-hover;
+//   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
 }
 // ----------------------------Особливості-----------------------------------------
 
@@ -75,6 +79,7 @@
   font-size: 14px;
   line-height: 24px;
   padding-top: 10px;
+  
 }
 
 p.services-item-a {
@@ -94,11 +99,15 @@ p.services-item-a {
 
   bottom: 110px;
   padding-right: 30px;
+   svg {
+    width: 70px;
+    height: 70px;
+  }
 }
-.services-item-icon svg {
-  width: 70px;
-  height: 70px;
-}
+// .services-item-icon svg {
+//   width: 70px;
+//   height: 70px;
+// }
 
 /* .services-item > img{
   
@@ -122,18 +131,18 @@ p.services-item-a {
   color: $foto-color;
   padding: 40px 20px;
   text-align: center;
-}
-.foto h1 {
+
+ h1 {
   font-size: 36px;
 }
-.foto ul {
+ ul {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
   position: relative;
   margin: 10px;
 }
-
+}
 /* .foto-li-text{
 position: absolute;
 width: 370px;
@@ -194,24 +203,41 @@ justify-content: center
   color: $my_team-color;
   /* padding: 40px 20px; */
   text-align: center;
-}
-.my_teams h2 {
+
+ h2 {
   font-size: 36px;
   padding-top: 94px;
 }
-.my_teams ul {
+ ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 50px;
+}
+li {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 94px;
+
+  border-radius: 0px 0px 4px 4px;
+  background: $my_teams-li-color;
+  height: 388px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+p {
+  color: $my_teams-p-color;
+  font-size: 16px;
+}
+
 }
 .my-teams-social {
   display: flex;
   align-items: center;
   text-align: center;
   margin-left: 30px;
-}
-.my-teams-social-a svg {
+
+svg {
   /* background-color: var(--footer-a-bg) ; */
   width: 40px;
   height:40px;
@@ -226,7 +252,7 @@ justify-content: center
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.my-teams-social svg:hover {
+svg:hover {
     --color1: $my-teams-social-svg-hover-white;
    --color5: #2196F3;
   // --color2: #ffff ;
@@ -235,33 +261,19 @@ justify-content: center
   height:40px;
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.my_teams li {
-  margin: 10px;
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 94px;
-
-  border-radius: 0px 0px 4px 4px;
-  background: $my_teams-li-color;
-  height: 388px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.my_teams p {
-  color: $my_teams-p-color;
-  font-size: 16px;
-}
+
 .social-icon {
   width: 20px;
   height: 20px;
-}
-.social-icon:hover {
+
+&:hover {
   // width: 20px;
   // height: 20px;
   --color3: $social-icon-hover-color4;
   --color2: $social-icon-hover-color2;
 }
-
+}
 
 // ---------------------------- Постійні клієнти ----------------------------
 
@@ -269,6 +281,16 @@ justify-content: center
   text-align: center;
  // background-color:$clients-bg-color;
 
+ul {
+  display: flex;
+  padding: 0;
+}
+h2 {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  color: $clients-h2-color;
+  font-size: 36px;
+}
 }
 /* .clients- {
 } */
@@ -277,16 +299,7 @@ justify-content: center
   align-items: center;
   justify-content: space-evenly;
 }
-.clients ul {
-  display: flex;
-  padding: 0;
-}
-.clients h2 {
-  margin-top: 94px;
-  margin-bottom: 50px;
-  color: $clients-h2-color;
-  font-size: 36px;
-}
+
 .clients-li {
  
   flex-shrink: 0;
@@ -294,13 +307,13 @@ justify-content: center
   // border: 1px solid #afb1b8;
   // border-radius: 4px;
   padding-top: 12px;
-}
-.clients-li a svg:hover {
+ a svg:hover {
  // --color1: $color-clients-li-a-svg;
   --color1:#2196F3;
   fill: #2196F3;
   transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
   
+}
 }
 // .clients-li:hover {
 //  border-color: $color-clients-li-a-svg;

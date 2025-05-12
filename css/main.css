@@ -180,7 +180,7 @@ body {
   padding: 10px 10px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .header-item a:hover {
+.header a:hover {
   color: #2196F3;
 }
 .header .contact-link svg {
@@ -361,23 +361,21 @@ address {
   padding: 20px 0;
   width: 1200px;
 }
-
 address a {
   color: white;
   font-weight: 400;
   line-height: 24px;
   font-size: 14px;
 }
-
-.address-a2 {
-  color: gray;
-}
-
 address li {
   margin-bottom: 10px;
   margin-left: 25px;
   width: 231px;
   font-style: normal;
+}
+
+.address-a2 {
+  color: gray;
 }
 
 .blue {
@@ -422,7 +420,6 @@ address li {
   --color1: #fff ;
   margin-left: 10px;
 }
-
 .footer-a svg:hover {
   --color5: #2196F3 ;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -449,11 +446,9 @@ address li {
   /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
   color: #fff;
 }
-
 .bnt-intup-email:hover {
   box-shadow: 0 4px 8px rgb(0, 0, 1);
 }
-
 .bnt-intup-email img {
   padding-left: 10px;
 }
@@ -577,7 +572,7 @@ address li {
   padding: 180px 20px;
   text-align: center;
 }
-.content-up .content-up h2 {
+.content-up h2 {
   font-size: 44px;
 }
 .content-up .just-btn {
@@ -663,11 +658,9 @@ address li {
   padding: 40px 20px;
   text-align: center;
 }
-
 .foto h1 {
   font-size: 36px;
 }
-
 .foto ul {
   display: flex;
   justify-content: space-between;
@@ -737,17 +730,29 @@ justify-content: center
   /* padding: 40px 20px; */
   text-align: center;
 }
-
 .my_teams h2 {
   font-size: 36px;
   padding-top: 94px;
 }
-
 .my_teams ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding-top: 50px;
+}
+.my_teams li {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 94px;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  height: 388px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.my_teams p {
+  color: #757575;
+  font-size: 16px;
 }
 
 .my-teams-social {
@@ -756,8 +761,7 @@ justify-content: center
   text-align: center;
   margin-left: 30px;
 }
-
-.my-teams-social-a svg {
+.my-teams-social svg {
   /* background-color: var(--footer-a-bg) ; */
   width: 40px;
   height: 40px;
@@ -769,7 +773,6 @@ justify-content: center
   fill: white;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .my-teams-social svg:hover {
   --color1: $my-teams-social-svg-hover-white;
   --color5: #2196F3;
@@ -778,27 +781,10 @@ justify-content: center
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.my_teams li {
-  margin: 10px;
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 94px;
-  border-radius: 0px 0px 4px 4px;
-  background: #fff;
-  height: 388px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.my_teams p {
-  color: #757575;
-  font-size: 16px;
-}
-
 .social-icon {
   width: 20px;
   height: 20px;
 }
-
 .social-icon:hover {
   --color3: $social-icon-hover-color4;
   --color2: $social-icon-hover-color2;
@@ -806,6 +792,16 @@ justify-content: center
 
 .clients {
   text-align: center;
+}
+.clients ul {
+  display: flex;
+  padding: 0;
+}
+.clients h2 {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  color: #212121;
+  font-size: 36px;
 }
 
 /* .clients- {
@@ -816,24 +812,11 @@ justify-content: center
   justify-content: space-evenly;
 }
 
-.clients ul {
-  display: flex;
-  padding: 0;
-}
-
-.clients h2 {
-  margin-top: 94px;
-  margin-bottom: 50px;
-  color: #212121;
-  font-size: 36px;
-}
-
 .clients-li {
   flex-shrink: 0;
   margin-bottom: 94px;
   padding-top: 12px;
 }
-
 .clients-li a svg:hover {
   --color1:#2196F3;
   fill: #2196F3;
